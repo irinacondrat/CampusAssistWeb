@@ -1,0 +1,15 @@
+.DS_Store
+*.class
+*.log
+*.tmp
+*.war
+*.db
+build/
+dist/
+*.iml
+*.ipr
+*.iws
+nbproject/private/
+.idea/
+.vscode/
+target/
