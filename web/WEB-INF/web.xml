@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <!-- Login Servlet -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>servlets.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Book Appointment Servlet -->
+    <servlet>
+        <servlet-name>BookAppointmentServlet</servlet-name>
+        <servlet-class>servlets.BookAppointmentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookAppointmentServlet</servlet-name>
+        <url-pattern>/BookAppointmentServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Submit Feedback Servlet -->
+    <servlet>
+        <servlet-name>SubmitFeedbackServlet</servlet-name>
+        <servlet-class>servlets.SubmitFeedbackServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubmitFeedbackServlet</servlet-name>
+        <url-pattern>/SubmitFeedbackServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Admin Response Servlet -->
+    <servlet>
+        <servlet-name>AdminResponseServlet</servlet-name>
+        <servlet-class>servlets.AdminResponseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminResponseServlet</servlet-name>
+        <url-pattern>/AdminResponseServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Default Landing Page -->
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <!-- FAQ --> 
+    <servlet>
+    <servlet-name>FaqServlet</servlet-name>
+    <servlet-class>servlets.FaqServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>FaqServlet</servlet-name>
+    <url-pattern>/FaqServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <servlet-name>AppointmentActionServlet</servlet-name>
+    <servlet-class>servlets.AppointmentActionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AppointmentActionServlet</servlet-name>
+        <url-pattern>/AppointmentActionServlet</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to CampusAssist</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f8fc;
+            margin: 0;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #004080;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .menu a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #0066cc;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu a:hover {
+            background-color: #004c99;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to CampusAssist</h1>
+    <p>This is your web version of CampusAssist. Please choose your access level below:</p>
+
+    <div class="menu">
+        <a href="login.jsp">Go to Student Page</a>
+        <a href="adminLogin.jsp">Go to Admin Page</a>
+    </div>
+
+    <footer>
+        &copy; 2025 CampusAssist. All rights reserved.
+    </footer>
+</body>
+</html>
